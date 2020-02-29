@@ -1,0 +1,71 @@
+.mustache {
+  width: 180px;
+  height: 180px;
+  color: black;
+  /* background-color: currentColor; */
+  position: absolute;
+  border-radius: 50%;
+  left: 100px;
+  box-shadow:
+   /* eixo x - eixo y - blur - spread*/ 
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor
+}
+
+.mustache::before {
+  content: '';
+  position: absolute;
+  width: 210px;
+  left: 30px;
+  top: 120px;
+  height: 120px;
+  border-bottom: solid 180px currentColor;
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0 0 0 100%;
+  transform: rotate(-40deg);
+  transform-origin: right 210px;
+  animation: shakeLeft 1s ease-in-out infinite;
+}
+
+.mustache::after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  left: 390px;
+  top: 120px;
+  height: 120px;
+  border-bottom: solid 180px currentColor;
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0 0 100% 0;
+  transform: rotate(40deg);
+  transform-origin: left 210px;
+  animation: shakeRight 1s ease-in-out infinite;
+}
+
+
+
+
+@keyframes shakeLeft {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
+
+
+@keyframes shakeRight {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
