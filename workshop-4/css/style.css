@@ -18,7 +18,21 @@ header {
 }
 
 header .container {
-  justify-content: ;
+  align-items: center;
+}
+
+button,
+input {
+  outline: none;
+}
+
+header .container .search-wrapper > input {
+  height: 28px;
+  width: 200px;
+  border-radius: 30px;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
 }
 
 .btn {
@@ -28,6 +42,7 @@ header .container {
   padding: 8px 8px;
   background: #4090db;
   color: #fff;
+  transition: .5s ease-in-out all;
 }
 
 .btn.link {
@@ -42,6 +57,63 @@ header .container {
   color: #4090db;
   border-radius: 3px;
 }
+
+.btn:hover {
+  background-color: #f7cc94;
+}
+
+header .container .search-wrapper > input:focus {
+  border-color: #4090db;
+}
+
+.profile .container .avatar-wrapper img {
+  border-radius: 100%;
+}
+
+.profile .user-wrapper .user-title {
+  display: flex;
+}
+
+.profile .user-wrapper .user-title .username {
+  margin-right: 20px;
+}
+
+.profile .user-wrapper .user-description {
+  margin: 23px 0;
+}
+
+.profile .user-wrapper .follow-info,
+.profile .user-wrapper .follow-info .info {
+  display: flex;
+}
+
+.profile .user-wrapper .follow-info .info {
+  margin-right: 25px;
+}
+
+.profile .user-wrapper .follow-info .info .qtd {
+  margin-right: 5px;
+}
+
+section#profile[class="profile"] {
+  margin: 50px 0;
+}
+
+.profile .container {
+  align-items: center;
+}
+
+.posts .post-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.posts .post-list .post-item img{
+  width: 250px;
+}
+
 
 .container {
   max-width: 1000px;
