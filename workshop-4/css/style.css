@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Arial';
+  background-color: #f8f8f8;
+}
+
+header {
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  justify-content: ;
+}
+
+.btn {
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 8px 8px;
+  background: #4090db;
+  color: #fff;
+}
+
+.btn.link {
+  background: transparent;
+  border-color: transparent;
+  color: #4090db;
+}
+
+.btn.outline {
+  border-color: #4090db;
+  background: transparent;
+  color: #4090db;
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
